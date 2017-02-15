@@ -5,7 +5,7 @@ import style from './style';
 import style_iphone from '../button/style_iphone';
 // import jquery for API calls
 import $ from 'jquery';
-// import the Button component
+// import the Button component sgdfuydsguyfgdsuygfusydgfuysgdb
 import Button from '../button';
 
 export default class Iphone extends Component {
