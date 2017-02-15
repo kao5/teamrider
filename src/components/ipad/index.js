@@ -71,3 +71,5 @@ export default class Ipad extends Component {
 		});      
 	}
 }
+
+//testing comment for commit purposes
