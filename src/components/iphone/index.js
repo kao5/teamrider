@@ -57,13 +57,13 @@ export default class Iphone extends Component {
 
 	parseResponse = (parsed_json) => {
 		var location = parsed_json['current_observation']['display_location']['city'];
-		var temp_c = parsed_json['current_observation']['temp_c'];
+		var temp_f = parsed_json['current_observation']['temp_f'];
 		var conditions = parsed_json['current_observation']['weather'];
 
 		// set states for fields so they could be rendered later on
 		this.setState({
 			locate: location,
-			temp: temp_c,
+			temp: temp_f,
 			cond : conditions
 		});      
 	}
