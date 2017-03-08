@@ -3,38 +3,177 @@
 .container { 
 	display: flex;
 	flex-direction: column;
-	background-image: url('../../assets/backgrounds/clear-iphone.jpg');
+	/*background-image: url('../../assets/backgrounds/clear-iphone.jpg');*/
+	
 	color: #fff;
 	width: 414px;
 	height: 736px;
-	text-align: center;
-	padding-top: 80px;
+	/*text-align: left;*/
+	/*padding-top: 80px;*/
 	margin: 0 auto;
 }
+
+.container .fsegment {
+
+	
+	min-height: 50%;
+	background: #77919C;
+
+
+}
+.container .ssegment {
+	min-height: 20%;
+	background: #B0BFC6;
+
+}
+
+.container .tsegment {
+	
+	min-height: 30%;
+	background: #EAEFF1;
+
+}
+
+
 .header {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	
 }
 .details {
 	flex: 4;
 }
 .city {
-	flex: 1;
-	font-size: 1.7em;
-	font-weight: 400;	
+	/*flex: 1;*/
+	flex-direction: row;
+	font-size: 1.4em;
+	font-weight: 400;
+	text-align: left;	
 }
+
+
+.feels {
+	position: absolute;
+	top: 150px;
+	margin-left: 30px;
+	
+	border: 3px solid;
+	font-size: 1.3em;
+
+}
+
 .conditions {
-	flex: 1;
-	font-size: 1em;
+	position: absolute;
+	margin-left: 210px;
+	top: 150px;
+	border: 3px solid;
+	font-size: 1.3em;
+
 }
+
+
+.sunr {
+	position: absolute;
+	top: 210px;
+	margin-left: 30px;
+	width: 60px;
+	height: 40px;
+	border: 3px solid;
+	background-image: url('../../assets/backgrounds/Sunrise.png');
+	background-size: 50px 55px;
+	background-repeat: no-repeat;
+}
+
+.sunrt {
+	position: absolute;
+	top: 210px;
+	margin-left: 100px;
+	width: 60px;
+	height: 40px;
+	border: 3px solid;
+	
+}
+
+.suns {
+	position: absolute;
+	top: 250px;
+	margin-left: 30px;
+	width: 60px;
+	height: 60px;
+	border: 3px solid;
+	background-image: url('../../assets/backgrounds/Sunset.png');
+	background-size: 50px 55px;
+	background-repeat: no-repeat;
+}
+
+.sunst {
+	position: absolute;
+	top: 270px;
+	margin-left: 100px;
+	width: 60px;
+	height: 40px;
+	border: 3px solid;
+	
+}
+
+.rain {
+	position: absolute;
+	top: 210px;
+	margin-left: 210px;
+	width: 60px;
+	height: 50px;
+	border: 3px solid;
+	background-image: url('../../assets/backgrounds/Rain.png');
+	background-size: 45px 40px;
+	background-repeat: no-repeat;
+}
+
+.raint {
+	position: absolute;
+	top: 210px;
+	margin-left: 280px;
+	width: 60px;
+	height: 40px;
+	border: 3px solid;
+
+}
+
+
+
+.visib {
+	position: absolute;
+	top: 260px;
+	margin-left: 210px;
+	width: 60px;
+	height: 50px;
+	border: 3px solid;
+	background-image: url('../../assets/backgrounds/visibility.png');
+	background-size: 45px 40px;
+	background-repeat: no-repeat;
+}
+
+.visibt {
+	position: absolute;
+	top: 260px;
+	margin-left: 280px;
+	width: 60px;
+	height: 40px;
+	border: 3px solid;
+
+}
+
+
 .temperature {
-	flex: 2;
+	
 	margin-top: 0;
 	font-size: 4.8em;
+	
 	font-weight: 300;
 	letter-spacing: -12px;
+	text-align: center;	
 }
+
 .filled:after {
 	content: "°";
 	margin: 0 0 0 1rem;
@@ -43,4 +182,6 @@
 	display: inline-block;
 	padding-top: 10px;
 	vertical-align: top;
+	text-align: center;	
 }
+
