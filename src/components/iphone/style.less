@@ -44,6 +44,46 @@
 .details {
 	flex: 4;
 }
+
+.flag button {
+
+	position : absolute;
+	top: 10px;
+	margin-left: 340px;
+	 background-color: Transparent;
+	width : 60px;
+	height : 40px;
+	
+	background: url('../../assets/backgrounds/USAflag.png');
+	background-size: 60px 40px;
+	background-repeat: no-repeat;
+
+}
+
+.info {
+
+	position: absolute;
+	top: 40px;
+	margin-left: 30px;
+
+
+}
+
+.warning button {
+
+	position : absolute;	
+	top: 30px;
+	width : 50px;
+	height : 40px;
+	margin-left: 110px;
+	border: none;
+	 background-color: Transparent;
+   	background: url('../../assets/backgrounds/warning.png');
+	background-size: 50px 40px;
+	background-repeat: no-repeat;
+
+}
+
 .city {
 	/*flex: 1;*/
 	flex-direction: row;
@@ -53,12 +93,22 @@
 }
 
 
+.maxmintemp {
+	position: absolute;
+	top: 130px;
+	margin-left: 60px;
+	
+	
+	font-size: 1.5em;
+
+}
+
 .feels {
 	position: absolute;
-	top: 150px;
+	top: 160px;
 	margin-left: 30px;
 	
-	border: 3px solid;
+	
 	font-size: 1.3em;
 
 }
@@ -66,8 +116,8 @@
 .conditions {
 	position: absolute;
 	margin-left: 210px;
-	top: 150px;
-	border: 3px solid;
+	top: 160px;
+	
 	font-size: 1.3em;
 
 }
@@ -75,11 +125,11 @@
 
 .sunr {
 	position: absolute;
-	top: 210px;
+	top: 220px;
 	margin-left: 30px;
 	width: 60px;
 	height: 40px;
-	border: 3px solid;
+	
 	background-image: url('../../assets/backgrounds/Sunrise.png');
 	background-size: 50px 55px;
 	background-repeat: no-repeat;
@@ -87,21 +137,21 @@
 
 .sunrt {
 	position: absolute;
-	top: 210px;
+	top: 230px;
 	margin-left: 100px;
 	width: 60px;
 	height: 40px;
-	border: 3px solid;
+	
 	
 }
 
 .suns {
 	position: absolute;
-	top: 250px;
+	top: 260px;
 	margin-left: 30px;
 	width: 60px;
 	height: 60px;
-	border: 3px solid;
+	
 	background-image: url('../../assets/backgrounds/Sunset.png');
 	background-size: 50px 55px;
 	background-repeat: no-repeat;
@@ -109,21 +159,21 @@
 
 .sunst {
 	position: absolute;
-	top: 270px;
+	top: 280px;
 	margin-left: 100px;
 	width: 60px;
 	height: 40px;
-	border: 3px solid;
+	
 	
 }
 
 .rain {
 	position: absolute;
-	top: 210px;
+	top: 220px;
 	margin-left: 210px;
 	width: 60px;
 	height: 50px;
-	border: 3px solid;
+	
 	background-image: url('../../assets/backgrounds/Rain.png');
 	background-size: 45px 40px;
 	background-repeat: no-repeat;
@@ -131,11 +181,11 @@
 
 .raint {
 	position: absolute;
-	top: 210px;
+	top: 220px;
 	margin-left: 280px;
 	width: 60px;
 	height: 40px;
-	border: 3px solid;
+	
 
 }
 
@@ -143,11 +193,11 @@
 
 .visib {
 	position: absolute;
-	top: 260px;
+	top: 270px;
 	margin-left: 210px;
 	width: 60px;
 	height: 50px;
-	border: 3px solid;
+	
 	background-image: url('../../assets/backgrounds/visibility.png');
 	background-size: 45px 40px;
 	background-repeat: no-repeat;
@@ -155,11 +205,11 @@
 
 .visibt {
 	position: absolute;
-	top: 260px;
+	top: 270px;
 	margin-left: 280px;
 	width: 60px;
 	height: 40px;
-	border: 3px solid;
+	
 
 }
 
@@ -174,6 +224,93 @@
 	text-align: center;	
 }
 
+.left_button button {
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 10px;
+	background: #B0BFC6;
+	background-image: url('https://www.encompasscorporation.com/wp-content/uploads/2015/09/white-arrow-down.png');
+	background-size: 40px 40px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	transform: rotate(90deg);
+	border: none;
+}
+
+.right_button button {
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 364px;
+	background: #B0BFC6;
+	background-image: url('https://www.encompasscorporation.com/wp-content/uploads/2015/09/white-arrow-down.png');
+	background-size: 40px 40px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	transform: rotate(270deg);
+	border: none;
+}
+
+.hour0 {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+.hour1 {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 183px;
+}
+.hour2 {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 285px;
+}
+
+.hourlytemp0 {
+	position: absolute;
+	margin-top: 105px;
+	margin-left: 72px;
+	font-size: 15px;
+}
+.hourlytemp1 {
+	position: absolute;
+	margin-top: 105px;
+	margin-left: 181px;
+	font-size: 15px;
+}
+.hourlytemp2 {
+	position: absolute;
+	margin-top: 105px;
+	margin-left: 292px;
+	font-size: 15px;
+}
+
+.hourlyicon0 {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 70px;
+	height: 70px;
+	width: 70px;
+}
+.hourlyicon1 {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 183px;
+	height: 70px;
+	width: 70px;
+}
+.hourlyicon2 {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 285px;
+	height: 70px;
+	width: 70px;
+}
+
 .filled:after {
 	content: "°";
 	margin: 0 0 0 1rem;
@@ -185,3 +322,40 @@
 	text-align: center;	
 }
 
+
+.container .tsegment  p {
+	color: black;
+
+}
+
+
+.placeicon {
+
+	top: 280px;
+	margin-top: 20px;
+  	margin-bottom: 20px;
+  	margin-right: 20px;
+ 	 margin-left: 20px;
+	width: 105px;
+	height: 100px;
+	border: 3px solid;
+	background-image: url('../../assets/backgrounds/BM.jpg');
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+}
+
+.ul {
+	position: fixed;
+	bottom:150px;
+	right: 20px;
+	width: 250px;
+	left: 530px;
+
+
+    padding: 20px;
+}
+
+.li {
+
+    margin: 5px;
+}
